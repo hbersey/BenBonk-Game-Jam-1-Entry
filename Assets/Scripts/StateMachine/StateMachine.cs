@@ -16,7 +16,7 @@ namespace StateMachine
             _state.PhysicsUpdate();
         }
 
-        public void SetState(State state)
+        protected void SetState(State state)
         {
             _state?.End();
             _state = state;

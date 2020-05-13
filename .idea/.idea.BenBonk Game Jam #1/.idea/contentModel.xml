@@ -18,9 +18,29 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Controllers" t="Include">
+            <e p="Platformer" t="Include">
+              <e p="MovingNPCs" t="Include">
+                <e p="HorizontalPatrolAndChaseNPC.cs" t="Include" />
+                <e p="HorizontalPatrolNPC.cs" t="Include" />
+                <e p="PlatformerMovingNPC.cs" t="Include" />
+                <e p="States" t="Include">
+                  <e p="BaseState.cs" t="Include" />
+                  <e p="ChaseState.cs" t="Include" />
+                  <e p="HorizontalPatrolAndDetectState.cs" t="Include" />
+                  <e p="HorizontalPatrolState.cs" t="Include" />
+                  <e p="IdleState.cs" t="Include" />
+                  <e p="MoveState.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
           <e p="StateMachine" t="Include">
             <e p="State.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
+          </e>
+          <e p="Util" t="Include">
+            <e p="MathUtil.cs" t="Include" />
           </e>
         </e>
       </e>
