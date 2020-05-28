@@ -2,11 +2,11 @@
 
 namespace Controllers.Platformer.MovingNPCs.States
 {
-    public class MoveState : BaseState
+    public class HorizontalMoveState : BaseState
     {
         protected float XDirection;
 
-        protected MoveState(PlatformerMovingNpc npc, float xDirection) : base(npc)
+        protected HorizontalMoveState(PlatformerMovingNpc npc, float xDirection) : base(npc)
         {
             XDirection = xDirection;
         }

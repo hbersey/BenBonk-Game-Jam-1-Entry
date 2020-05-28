@@ -3,7 +3,7 @@ using Util;
 
 namespace Controllers.Platformer.MovingNPCs.States
 {
-    public class HorizontalPatrolState : MoveState
+    public class HorizontalPatrolState : HorizontalMoveState
     {
         private readonly float[] _stops;
 

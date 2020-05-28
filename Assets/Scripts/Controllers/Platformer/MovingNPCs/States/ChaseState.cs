@@ -2,7 +2,7 @@
 
 namespace Controllers.Platformer.MovingNPCs.States
 {
-    public class ChaseState : MoveState
+    public class ChaseState : HorizontalMoveState
     {
         public delegate void OnLeaveRadius();
 

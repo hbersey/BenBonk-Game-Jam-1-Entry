@@ -20,35 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d0db76-4888-492f-a1ed-f7944ed91ec5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolAndChaseNPC.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolAndChaseNpc.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolNPC.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolNpc.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/PlatformerMovingNPC.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/PlatformerMovingNPC.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/BaseState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/BaseState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/ChaseState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/ChaseState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolAndDetectState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolAndDetectState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/IdleState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/IdleState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/MoveState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/MoveState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/MathUtil.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Util/MathUtil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/Player.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerMoveState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerMoveState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/ChaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/ChaseState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/MoveState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalMoveState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/MoveState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalMoveState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,12 +47,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolAndDetectState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/MoveState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalMoveState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/IdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/BaseState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/PlatformerMovingNPC.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolAndChaseNpc.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolNpc.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerMoveState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/MathUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/2DPlatformerMovingEntityController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlatformerMovingEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/States/Idle.cs" />
@@ -96,10 +81,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/BaseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolNPC.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolAndChaseNPC.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/PlatformerMovingNPC.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolAndDetectState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolAndChaseNpc.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/ChaseState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/PlatformerMovingNPC.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerHorizontalMoveState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerMoveState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalMoveState.cs" />
       </list>
     </option>
   </component>
@@ -118,12 +108,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9544">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="9544" />
+      <option name="pid" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -143,7 +134,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589374381945</updated>
-      <workItem from="1589374397608" duration="21548000" />
+      <workItem from="1589374397608" duration="28309000" />
+      <workItem from="1589441054203" duration="892000" />
+      <workItem from="1589443192111" duration="591000" />
+      <workItem from="1589443867949" duration="545000" />
+      <workItem from="1589444738563" duration="623000" />
+      <workItem from="1590676162862" duration="831000" />
+      <workItem from="1590678560333" duration="53000" />
     </task>
     <servers />
   </component>
@@ -159,82 +156,92 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1589384481281">
+    <state x="552" y="161" key="#Plugins" timestamp="1589443786859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481281" />
-    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1589384481281">
+    <state x="552" y="161" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1589443786859" />
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1589409670373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481281" />
-    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1589384481281">
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670373" />
+    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1589409670373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481281" />
-    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1589384481281">
+    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670373" />
+    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1589409670373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481281" />
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1589384481282">
+    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670373" />
+    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1589409670373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481282" />
-    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1589384481282">
+    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670373" />
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481282" />
-    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1589384481282">
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481282" />
-    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1589384481282">
+    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1589409670373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481282" />
-    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1589384481283">
+    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670373" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481283" />
-    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1589384481282">
+    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481282" />
-    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1589384481282">
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481282" />
-    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1589384481282">
+    <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481282" />
-    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1589384481283">
+    <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481283" />
-    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1589384481283">
+    <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481283" />
-    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1589384481283">
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481283" />
-    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1589384481283">
+    <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589384481283" />
-    <state x="794" y="236" key="RiderGenerateDialog" timestamp="1589398585781">
+    <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1589409670374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="236" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589398585781" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589398736881">
+    <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
+    <state x="794" y="238" key="RiderGenerateDialog" timestamp="1590676692442">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="236" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589408457068" />
+    <state x="794" y="238" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1590676692442" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1589444362602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589398736881" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589444362602" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589444232259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589444232259" />
   </component>
 </project>

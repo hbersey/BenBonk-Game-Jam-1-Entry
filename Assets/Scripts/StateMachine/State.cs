@@ -19,6 +19,5 @@
         public virtual void End()
         {
         }
-
     }
 }
