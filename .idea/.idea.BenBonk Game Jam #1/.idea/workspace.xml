@@ -20,19 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d0db76-4888-492f-a1ed-f7944ed91ec5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/Player.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerMoveState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerMoveState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scoring.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreAndHighScoreManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreAndHighscoreManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreOnlyManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreOnlyManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/ChaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/ChaseState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/MoveState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalMoveState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/MoveState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalMoveState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +37,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreOnlyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/ChaseState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolAndDetectState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs.meta" root0="FORCE_HIGHLIGHTING" />
@@ -53,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/BaseState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/PlatformerMovingNPC.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolAndChaseNpc.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreAndHighScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolNpc.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerMoveState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
@@ -90,6 +86,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerMoveState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalMoveState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scoring/IScoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scoring/IntegerScoreOnlyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreAndHightscoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreAndHighscoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreAndHighScoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreOnlyManager.cs" />
       </list>
     </option>
   </component>
@@ -141,6 +143,7 @@
       <workItem from="1589444738563" duration="623000" />
       <workItem from="1590676162862" duration="831000" />
       <workItem from="1590678560333" duration="53000" />
+      <workItem from="1590678784975" duration="1361000" />
     </task>
     <servers />
   </component>
@@ -239,6 +242,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589444362602" />
+    <state x="2562" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590679627968">
+      <screen x="1920" y="26" width="1680" height="1020" />
+    </state>
+    <state x="2562" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590679627968" />
+    <state x="2012" y="118" width="1496" height="836" key="dock-window-1" timestamp="1590679429961">
+      <screen x="1920" y="26" width="1680" height="1020" />
+    </state>
+    <state x="2012" y="118" width="1496" height="836" key="dock-window-1/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590679429961" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589444232259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
