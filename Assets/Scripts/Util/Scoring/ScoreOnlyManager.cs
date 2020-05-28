@@ -1,4 +1,4 @@
-﻿namespace Scoring
+﻿namespace Util.Scoring
 {
     public class ScoreOnlyManager
     {

@@ -40,16 +40,16 @@
               </e>
             </e>
           </e>
-          <e p="Scoring" t="Include">
-            <e p="ScoreAndHighscoreManager.cs" t="Include" />
-            <e p="ScoreOnlyManager.cs" t="Include" />
-          </e>
           <e p="StateMachine" t="Include">
             <e p="State.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
           </e>
           <e p="Util" t="Include">
             <e p="MathUtil.cs" t="Include" />
+            <e p="Scoring" t="Include">
+              <e p="ScoreAndHighscoreManager.cs" t="Include" />
+              <e p="ScoreOnlyManager.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>

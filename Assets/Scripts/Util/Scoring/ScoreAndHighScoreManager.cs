@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Scoring
+﻿namespace Util.Scoring
 {
     public class ScoreAndHighScoreManager : ScoreOnlyManager
     {
