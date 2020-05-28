@@ -13,13 +13,13 @@
             _incrementAmount = incrementAmount;
         }
 
-        public float Increment()
+        public float IncrementScore()
         {
             Score += _incrementAmount;
             return Score;
         }
 
-        public float Reset()
+        public float ResetScore()
         {
             Score = _initialScore;
             return Score;

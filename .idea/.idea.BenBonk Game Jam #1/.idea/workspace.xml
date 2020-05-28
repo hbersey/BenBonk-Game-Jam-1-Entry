@@ -25,8 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18d0db76-4888-492f-a1ed-f7944ed91ec5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="18d0db76-4888-492f-a1ed-f7944ed91ec5" name="Default Changelist" comment="Corrected Scoring Namespace">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreAndHighScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreAndHighScoreManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreOnlyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreOnlyManager.cs" afterDir="false" />
@@ -148,8 +147,16 @@
       <workItem from="1589444738563" duration="623000" />
       <workItem from="1590676162862" duration="831000" />
       <workItem from="1590678560333" duration="53000" />
-      <workItem from="1590678784975" duration="2393000" />
+      <workItem from="1590678784975" duration="4307000" />
     </task>
+    <task id="LOCAL-00001" summary="Corrected Scoring Namespace">
+      <created>1590681686548</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590681686548</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -185,6 +192,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Corrected Scoring Namespace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected Scoring Namespace" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="161" key="#Plugins" timestamp="1589443786859">
@@ -264,18 +273,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589444362602" />
-    <state x="2562" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590679627968">
+    <state x="2352" y="269" key="Vcs.Push.Dialog.v2" timestamp="1590681701991">
       <screen x="1920" y="26" width="1680" height="1020" />
     </state>
-    <state x="2562" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590679627968" />
+    <state x="2352" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590681701991" />
+    <state x="2562" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590681693591">
+      <screen x="1920" y="26" width="1680" height="1020" />
+    </state>
+    <state x="2562" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590681693591" />
     <state x="2012" y="118" width="1496" height="836" key="dock-window-1" timestamp="1590679429961">
       <screen x="1920" y="26" width="1680" height="1020" />
     </state>
     <state x="2012" y="118" width="1496" height="836" key="dock-window-1/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590679429961" />
-    <state x="2465" y="247" width="672" height="665" key="search.everywhere.popup" timestamp="1590681604701">
+    <state x="2465" y="247" width="672" height="665" key="search.everywhere.popup" timestamp="1590684681330">
       <screen x="1920" y="26" width="1680" height="1020" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589444232259" />
-    <state x="2465" y="247" width="672" height="665" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590681604701" />
+    <state x="2465" y="247" width="672" height="665" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590684681330" />
   </component>
 </project>
