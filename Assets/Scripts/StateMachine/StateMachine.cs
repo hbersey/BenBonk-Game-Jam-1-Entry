@@ -2,25 +2,25 @@
 
 namespace StateMachine
 {
-    public abstract class StateMachine : MonoBehaviour
+    public abstract class StateMachine<T> : MonoBehaviour where T : State
     {
-        private State _state;
+        protected State State;
 
         private void Update()
         {
-            _state.Update();
+            State.Update();
         }
 
         private void FixedUpdate()
         {
-            _state.PhysicsUpdate();
+            State.PhysicsUpdate();
         }
 
         protected void SetState(State state)
         {
-            _state?.End();
-            _state = state;
-            _state.Begin();
+            State?.End();
+            State = state;
+            State.Begin();
         }
     }
 }

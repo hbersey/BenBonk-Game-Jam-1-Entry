@@ -1,7 +1,4 @@
-﻿using Unity.Mathematics;
-using UnityEngine;
-
-namespace Util
+﻿namespace Util
 {
     public static class MathUtil
     {

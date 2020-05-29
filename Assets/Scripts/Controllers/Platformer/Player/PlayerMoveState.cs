@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Controllers.Platformer.Player
 {
-    public class PlayerMoveState : MovingNPCs.States.HorizontalMoveState
+    public class PlayerMoveState : MovingNPCs.States.HorizontalMoveState, IPlayerState
     {
         private const float GroundDistance = 0.8f;
         
@@ -35,5 +35,7 @@ namespace Controllers.Platformer.Player
             var hit = Physics2D.Raycast(position, Vector2.down, GroundDistance, _groundLayer);
             return hit.collider;
         }
+
+        public bool CanTakeDamage() => true;
     }
 }
