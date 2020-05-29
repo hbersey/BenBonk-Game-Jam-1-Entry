@@ -2,7 +2,8 @@
 {
     public class ScoreOnlyManager
     {
-        public float Score;
+        public virtual float Score { get; protected set; }
+
         private readonly float _initialScore;
         private readonly float _incrementAmount;
 
