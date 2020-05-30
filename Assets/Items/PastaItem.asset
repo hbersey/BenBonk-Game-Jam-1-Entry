@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cc579a013a246679ec9c05c4d1b6c7c, type: 3}
-  m_Name: MilkItem
+  m_Name: PastaItem
   m_EditorClassIdentifier: 
-  id: milk
-  name: Milk
-  pickupPrefab: {fileID: 6841013365259843552, guid: 28cd114e74ff1c5449032fadeb98f5a3,
+  id: pasta
+  name: Pasta
+  pickupPrefab: {fileID: 1942578952923963689, guid: d3fffcd2fd1f9a641a534cf8043ef74c,
     type: 3}
-  toFindSprite: {fileID: 21300000, guid: eb04d3e473af973419e4fdbd1847e30c, type: 3}
+  toFindSprite: {fileID: 21300000, guid: 341844f3834ed0046bcd6dec182a1535, type: 3}

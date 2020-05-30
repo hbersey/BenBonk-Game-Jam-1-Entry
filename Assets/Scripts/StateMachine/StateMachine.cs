@@ -2,9 +2,9 @@
 
 namespace StateMachine
 {
-    public abstract class StateMachine<T> : MonoBehaviour where T : State
+    public abstract class StateMachine<T>: MonoBehaviour  where T : State
     {
-        protected internal State State;
+        protected internal T State;
 
         private void Update()
         {
@@ -16,9 +16,9 @@ namespace StateMachine
             State.PhysicsUpdate();
         }
 
-        protected void SetState(State state)
+        protected internal void SetState(T state)
         {
-            State?.End();
+            if (State != null) State.End();
             State = state;
             State.Begin();
         }
