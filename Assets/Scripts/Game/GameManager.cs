@@ -6,6 +6,7 @@ using Player;
 using StateMachine;
 using UnityEngine;
 using UnityEngine.UI;
+using Util;
 using Util.Scoring;
 
 namespace Game
@@ -31,6 +32,7 @@ namespace Game
         internal Vector2 StartPoint;
         internal List<Vector2> ItemSpawnPoints;
         internal List<GameObject> SpawnedItems;
+
 
         private int _currentMapExtent = 1;
         private GameObject[,] _map = new GameObject[1, 1];
@@ -85,6 +87,19 @@ namespace Game
                         if (isFirst) (fragment, StartPoint) = fragment.StartFragment();
                         else
                         {
+                            if (mapX - 1 >= 0 && _map[mapX - 1, mapY] != null)
+                            {
+                                if (fragment.left != null) Destroy(fragment.left);
+                                var otherFragment = _map[mapX - 1, mapY].GetComponent<MapFragmentController>();
+                                if (otherFragment.right != null) Destroy(otherFragment.right);
+                            }
+                            else if (mapX + 1 < _currentMapExtent && _map[mapX + 1, mapY] != null)
+                            {
+                                if (fragment.right != null) Destroy(fragment.right);
+                                var otherFragment = _map[mapX + 1, mapY].GetComponent<MapFragmentController>();
+                                if (otherFragment.left != null) Destroy(otherFragment.left);
+                            }
+
                             if (mapY - 1 >= 0 && _map[mapX, mapY - 1] != null)
                             {
                                 if (fragment.bottom != null) Destroy(fragment.bottom);
@@ -134,8 +149,8 @@ namespace Game
         public void AddScore(float amount)
         {
             _scorer.IncrementScore(amount);
-            scoreText.text = _scorer.Score.ToString(CultureInfo.CurrentCulture);
-            highScoreText.text = $"Best: {_scorer.HighScore.ToString(CultureInfo.CurrentCulture)}";
+            scoreText.text = MathUtil.Abbreviate((int) _scorer.Score);
+            highScoreText.text = $"Best: {MathUtil.Abbreviate((int) _scorer.HighScore)}";
         }
     }
 }

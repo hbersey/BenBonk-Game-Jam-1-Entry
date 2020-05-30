@@ -12,11 +12,14 @@ namespace Game
         private static readonly string[] Days =
             {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
+        internal readonly float PointsPerItem;
+        
         private readonly List<ItemScriptableObject> _remainingItems;
 
         public RoundState(GameManager game, List<ItemScriptableObject> items) : base(game)
         {
             _remainingItems = items;
+            PointsPerItem = game.basePointsPerItem * Mathf.Pow(1.175f, game.RoundNumber);
         }
 
         public override void Begin()

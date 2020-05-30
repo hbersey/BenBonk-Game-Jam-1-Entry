@@ -18,7 +18,7 @@ namespace Item
             if (state.CurrentItem() != null && !state.CurrentItem().id.Equals(Id))
                 return;
 
-            state.RoundScorer.IncrementScore();
+            Game.AddScore(state.PointsPerItem);
             gameObject.SetActive(false);
 
             state.NextItem();
