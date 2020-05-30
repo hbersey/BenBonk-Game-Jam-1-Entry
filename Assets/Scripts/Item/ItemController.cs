@@ -13,16 +13,15 @@ namespace Item
         {
             if (!other.gameObject.tag.Equals("Player")) return;
 
-            if (Game.State is RoundState state)
-            {
-                // ReSharper disable once PossibleNullReferenceException
-                if (state.CurrentItem() != null && !state.CurrentItem().id.Equals(Id)) return;
-                
-                state.RoundScorer.IncrementScore();
-                Destroy(gameObject);
-                
-                state.NextItem();
-            }
+            if (!(Game.State is RoundState state) || state.CurrentItem() == null) return;
+            // ReSharper disable once PossibleNullReferenceException
+            if (state.CurrentItem() != null && !state.CurrentItem().id.Equals(Id))
+                return;
+
+            state.RoundScorer.IncrementScore();
+            Destroy(gameObject);
+
+            state.NextItem();
         }
     }
 }

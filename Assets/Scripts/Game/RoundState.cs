@@ -27,7 +27,7 @@ namespace Game
             Game.SpawnedItems.Clear();
 
             var itemsToSpawn = new List<ItemScriptableObject>(_remainingItems);
-            var unusedSpawnLocations = new List<Transform>(Game.spawnLocations);
+            var unusedSpawnLocations = new List<Transform>(Game.itemSpawnPoints);
 
             foreach (var item in itemsToSpawn)
             {
@@ -39,16 +39,19 @@ namespace Game
                 Game.SpawnedItems.Add(o);
             }
 
-            foreach (var o in from location in unusedSpawnLocations
-                let item = Game.allItems[Random.Range(0, Game.allItems.Length)]
-                select Instantiate(item.pickupPrefab, location.position, location.rotation))
+            foreach (var location in unusedSpawnLocations)
             {
+                var item = Game.allItems[Random.Range(0, Game.allItems.Length)];
+                var o = Instantiate(item.pickupPrefab, location.position, location.rotation);
+                o.GetComponent<ItemController>().Id = item.id;
                 Game.SpawnedItems.Add(o);
             }
 
             unusedSpawnLocations.Clear();
 
             Game.SpawnedItems.ForEach(o => o.GetComponent<ItemController>().Game = Game);
+
+            Game.player.gameObject.transform.position = Game.startPoint.position;
 
             Render();
         }
@@ -74,7 +77,8 @@ namespace Game
             _remainingItems.RemoveAt(0);
             if (_remainingItems.Count == 0)
                 Game.SetState(new EndGameState(Game));
-            Render();
+            else 
+                Render();
         }
     }
 }
