@@ -12,7 +12,7 @@ namespace Game
         [SerializeField] internal int baseItemsPerRound = 2;
 
         [FormerlySerializedAs("items")] [SerializeField]
-        private Item.ItemScriptableObject[] allItems;
+        internal Item.ItemScriptableObject[] allItems;
         [SerializeField] internal Transform[] spawnLocations;    
         
         private int _roundNumber;

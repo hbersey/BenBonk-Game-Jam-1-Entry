@@ -5,7 +5,7 @@
         public virtual float Score { get; protected set; }
 
         private readonly float _initialScore;
-        private readonly float _incrementAmount;
+        internal float _incrementAmount;
 
         public ScoreOnlyManager(float initialScore = 0f, float incrementAmount = 1f)
         {
