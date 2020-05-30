@@ -19,7 +19,7 @@ namespace Item
                 return;
 
             state.RoundScorer.IncrementScore();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
 
             state.NextItem();
         }

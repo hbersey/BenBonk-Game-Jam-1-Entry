@@ -409,8 +409,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 554c8defd1a8a654eb6c244888430600, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.17623615, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 0321c48c19c0ae144b1174cce0bf7664, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -429,7 +429,7 @@ Transform:
   m_GameObject: {fileID: 366768870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -794,15 +794,11 @@ MonoBehaviour:
   basePointsPerItem: 100
   baseItemsPerRound: 2
   player: {fileID: 366768871}
-  startPoint: {fileID: 823874610}
+  mapFragmentPrefabs:
+  - {fileID: 3836058521637366057, guid: e3c71f929bc51194caf15f194e8458d5, type: 3}
   allItems:
   - {fileID: 11400000, guid: 947378a3b9f03c84a8cb27d43bb34082, type: 2}
   - {fileID: 11400000, guid: 3dc49b4af03da0d4aaffbf8628970a24, type: 2}
-  itemSpawnPoints:
-  - {fileID: 503338886}
-  - {fileID: 239549111}
-  - {fileID: 781285485}
-  - {fileID: 248535756}
   dayWeekText: {fileID: 1704813133}
   toFindImage: {fileID: 505738225}
 --- !u!4 &1243301184
