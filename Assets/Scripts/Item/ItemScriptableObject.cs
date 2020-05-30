@@ -1,6 +1,5 @@
-﻿using System;
-using UnityEditor.SceneManagement;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Item
 {
@@ -9,6 +8,7 @@ namespace Item
     {
         public string id;
         public new string name;
-        public GameObject itemPrefab;
+        [FormerlySerializedAs("itemPrefab")] public GameObject pickupPrefab;
+        public Sprite toFindSprite;
     }
 }
