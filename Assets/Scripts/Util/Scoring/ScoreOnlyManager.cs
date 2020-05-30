@@ -14,11 +14,9 @@
             _incrementAmount = incrementAmount;
         }
 
-        public float IncrementScore()
-        {
-            Score += _incrementAmount;
-            return Score;
-        }
+
+        public void IncrementScore(float amount) => Score += amount;
+        public void IncrementScore() => IncrementScore(_incrementAmount);
 
         public float ResetScore()
         {

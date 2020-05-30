@@ -4,7 +4,7 @@ namespace StateMachine
 {
     public abstract class StateMachine<T> : MonoBehaviour where T : State
     {
-        protected State State;
+        protected internal State State;
 
         private void Update()
         {

@@ -1,6 +1,8 @@
-﻿namespace StateMachine
+﻿using UnityEngine;
+
+namespace StateMachine
 {
-    public abstract class State
+    public abstract class State: MonoBehaviour
     {
 
         public virtual void Begin()
