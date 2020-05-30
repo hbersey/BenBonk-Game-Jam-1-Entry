@@ -9,12 +9,15 @@ namespace Game
 {
     public class RoundState : GameState
     {
+        private static readonly string[] Days =
+            {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+
         protected internal readonly ScoreOnlyManager RoundScorer;
         private readonly List<ItemScriptableObject> _remainingItems;
-        
-        public RoundState(GameManager game, int roundNumber, List<ItemScriptableObject> items) : base(game)
+
+        public RoundState(GameManager game, List<ItemScriptableObject> items) : base(game)
         {
-            RoundScorer = new ScoreOnlyManager {_incrementAmount = game.basePointsPerItem * roundNumber};
+            RoundScorer = new ScoreOnlyManager {_incrementAmount = game.basePointsPerItem * game.RoundNumber};
             _remainingItems = items;
         }
 
@@ -52,10 +55,15 @@ namespace Game
 
         private void Render()
         {
+            var day = Days[(Game.RoundNumber - 1) % 7];
+            var week = (Game.RoundNumber - 1) / 7 + 1;
+
+            Game.dayWeekText.text = $"{day}, Week {week}";
             Game.toFindImage.sprite = CurrentItem()?.toFindSprite;
         }
+
         [CanBeNull]
-        public ItemScriptableObject  CurrentItem()
+        public ItemScriptableObject CurrentItem()
         {
             return _remainingItems.Count <= 0 ? null : _remainingItems[0];
         }

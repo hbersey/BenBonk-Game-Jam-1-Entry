@@ -13,9 +13,10 @@ namespace Game
         [SerializeField] internal Item.ItemScriptableObject[] allItems;
         [SerializeField] internal Transform[] spawnLocations;
 
+        [SerializeField] internal Text dayWeekText;
         [SerializeField] internal Image toFindImage;
-        
-        private int _roundNumber;
+
+        internal int RoundNumber;
         internal List<GameObject> SpawnedItems;
         private void Start()
         {
@@ -25,12 +26,13 @@ namespace Game
 
         public RoundState NextRound()
         {
-            _roundNumber++;
+            RoundNumber++;
             var items = new List<Item.ItemScriptableObject>();
-            for (var i = 0; i < baseItemsPerRound + (int) (1 - Mathf.Pow(1.15f, +_roundNumber)); i++)
+            for (var i = 0; i < baseItemsPerRound + (int) (1 - Mathf.Pow(1.15f, +RoundNumber)); i++)
                 items.Add(allItems[Random.Range(0, allItems.Length)]);
             // ReSharper disable once Unity.IncorrectMonoBehaviourInstantiation
-            return new RoundState(this, _roundNumber, items);
+            return new RoundState(this, items);
+            
         }
     }
 }
