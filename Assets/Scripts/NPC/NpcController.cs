@@ -23,5 +23,13 @@ namespace NPC
             // ReSharper disable once Unity.IncorrectMonoBehaviourInstantiation
             SetState(new NpcDestinationReachedState(this, null));
         }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (!other.collider.tag.Equals("Player")) return;
+if(!(Game.player.State is ))
+            
+            
+        }
     }
 }
