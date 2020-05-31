@@ -3,15 +3,13 @@ using System.Linq;
 using Item;
 using JetBrains.Annotations;
 using UnityEngine;
+using Util;
 using Util.Scoring;
 
 namespace Game
 {
     public class RoundState : GameState
     {
-        private static readonly string[] Days =
-            {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-
         internal readonly float PointsPerItem;
         
         private readonly List<ItemScriptableObject> _remainingItems;
@@ -57,7 +55,7 @@ namespace Game
 
         private void Render()
         {
-            var day = Days[(Game.RoundNumber - 1) % 7];
+            var day = Contants.Days[(Game.RoundNumber - 1) % 7];
             var week = (Game.RoundNumber - 1) / 7 + 1;
 
             Game.dayWeekText.text = $"{day}, Week {week}";

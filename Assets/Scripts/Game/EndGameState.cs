@@ -9,9 +9,7 @@
 
         public override void Begin()
         {
-            // DOES STUFF!
-
-            Game.SetState(Game.NextRound());
+            Game.EndOfDay();
         }
     }
 }

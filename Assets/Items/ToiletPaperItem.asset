@@ -16,4 +16,4 @@ MonoBehaviour:
   name: Toilet Paper
   pickupPrefab: {fileID: 5142878013919139646, guid: 23e20348dd607bc43894f3c230012018,
     type: 3}
-  toFindSprite: {fileID: 21300000, guid: 470616f72426cfd46b7758d6a206bb7b, type: 3}
+  toFindSprite: {fileID: 21300000, guid: 2643579ed63b5e446aef69a3469976d7, type: 3}

@@ -7,6 +7,7 @@ using NPC;
 using Player;
 using StateMachine;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Util;
 using Util.Scoring;
@@ -24,38 +25,45 @@ namespace Game
 
         [SerializeField] internal GameObject[] mapFragmentPrefabs;
         [SerializeField] internal ItemScriptableObject[] allItems;
-        [SerializeField] internal GameObject[] NpcPrefabs;
+        [SerializeField] internal GameObject[] npcPrefabs;
 
         [SerializeField] private Text scoreText;
         [SerializeField] private Text highScoreText;
         [SerializeField] internal Text dayWeekText;
         [SerializeField] internal Image toFindImage;
 
-        [SerializeField] private GameObject InGameGUI;
-        [SerializeField] private GameObject EndOfDayGUI;
+        [SerializeField] private GameObject inGameGui;
+        [SerializeField] private GameObject endOfDayGui;
+        [SerializeField] private GameObject endOfWeekGui;
+
+        [FormerlySerializedAs("endOfDayGuiDayWeekText")] [SerializeField]
+        private Text endOfDayTitle;
+
+        [SerializeField] private Text endOfWeekTitle;
 
         internal int RoundNumber;
         internal Vector2 StartPoint;
         internal List<Vector2> ItemSpawnPoints;
         internal List<GameObject> SpawnedItems;
         internal List<Vector2> NpcWaypoints;
-        internal List<GameObject> SpawnedNPCs;
 
         private int _currentMapExtent = 1;
         private GameObject[,] _map = new GameObject[1, 1];
         private ScoreAndHighScoreManager _scorer;
-        private List<int> usedNpcSpawns;
+        private List<int> _usedNpcSpawns;
+        private List<GameObject> _spawnedNpcs;
 
         private void Start()
         {
             ItemSpawnPoints = new List<Vector2>();
             SpawnedItems = new List<GameObject>();
             NpcWaypoints = new List<Vector2>();
-            SpawnedNPCs = new List<GameObject>();
+            _spawnedNpcs = new List<GameObject>();
             _scorer = new ScoreAndHighScoreManager(prefix: "GAME", doAutoSave: true, doTryLoad: true);
             AddScore(0f); // Renders Text
-            InGameGUI.SetActive(true);
-            EndOfDayGUI.SetActive(false);
+            inGameGui.SetActive(true);
+            endOfDayGui.SetActive(false);
+            endOfWeekGui.SetActive(false);
             SetState(NextRound(true));
         }
 
@@ -63,10 +71,10 @@ namespace Game
         {
             foreach (var item in SpawnedItems)
                 Destroy(item);
-            foreach (var npc in SpawnedNPCs) Destroy(npc);
+            foreach (var npc in _spawnedNpcs) Destroy(npc);
 
             SpawnedItems = new List<GameObject>();
-            SpawnedNPCs = new List<GameObject>();
+            _spawnedNpcs = new List<GameObject>();
 
             RoundNumber++;
 
@@ -79,16 +87,16 @@ namespace Game
                 items.Add(allItems[Random.Range(0, allItems.Length)]);
 
 
-            usedNpcSpawns = new List<int>();
+            _usedNpcSpawns = new List<int>();
             for (var i = 0; i < Mathf.Min(RoundNumber / 4, NpcWaypoints.Count); i++)
             {
                 GameObject o;
-                if (SpawnedNPCs.Count >= i)
+                if (_spawnedNpcs.Count >= i)
                 {
-                    o = Instantiate(NpcPrefabs[Random.Range(0, NpcPrefabs.Length)]);
+                    o = Instantiate(npcPrefabs[Random.Range(0, npcPrefabs.Length)]);
                 }
                 else
-                    o = SpawnedNPCs[i];
+                    o = _spawnedNpcs[i];
 
                 var npc = o.GetComponent<NpcController>();
                 npc.Game = this;
@@ -97,15 +105,15 @@ namespace Game
                 while (true)
                 {
                     waypointIndex = Random.Range(0, NpcWaypoints.Count);
-                    if (!usedNpcSpawns.Contains(waypointIndex))
+                    if (!_usedNpcSpawns.Contains(waypointIndex))
                         break;
                 }
 
                 o.transform.position = NpcWaypoints[waypointIndex];
                 npc.SetState(new NpcDestinationReachedState(npc, NpcWaypoints[waypointIndex]));
 
-                SpawnedNPCs.Add(o);
-                usedNpcSpawns.Add(waypointIndex);
+                _spawnedNpcs.Add(o);
+                _usedNpcSpawns.Add(waypointIndex);
             }
 
             // ReSharper disable once Unity.IncorrectMonoBehaviourInstantiation
@@ -202,14 +210,28 @@ namespace Game
 
         public void EndOfDay()
         {
-            InGameGUI.SetActive(false);
-            EndOfDayGUI.SetActive(true);
+            inGameGui.SetActive(false);
+
+            if (RoundNumber % 7 == 0)
+            {
+                endOfDayGui.SetActive(false);
+                endOfWeekGui.SetActive(true);
+                endOfWeekTitle.text = $"Week {RoundNumber / 7} Completed!";
+            }
+            else
+            {
+                endOfDayGui.SetActive(true);
+                endOfWeekGui.SetActive(false);
+                endOfDayTitle.text =
+                    $"{Contants.Days[(RoundNumber - 1) % 7]}, Week {RoundNumber / 7 + 1} Completed!";
+            }
         }
 
         public void Continue()
         {
-            InGameGUI.SetActive(true);
-            EndOfDayGUI.SetActive(false);
+            inGameGui.SetActive(true);
+            endOfDayGui.SetActive(false);
+            endOfWeekGui.SetActive(false);
             SetState(NextRound());
         }
     }
