@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6841013365259843550}
   - component: {fileID: 6841013365259843551}
   - component: {fileID: 6841013365259843548}
-  m_Layer: 0
-  m_Name: Milk pick up
+  m_Layer: 11
+  m_Name: MilkPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,4 +111,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8df42bc5c2f4d75b9940f23f2eb49e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}

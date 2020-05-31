@@ -13,6 +13,7 @@ namespace Map
         [SerializeField] internal GameObject bottom;
 
         [SerializeField] internal List<Transform> itemSpawnPoints;
+        [SerializeField] internal List<Transform> npcWaypoints;
 
         public (MapFragmentController, Vector2) StartFragment()
         {

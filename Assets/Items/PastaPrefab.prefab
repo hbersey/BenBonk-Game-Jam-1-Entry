@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1942578952923963691}
   - component: {fileID: 1942578952923963690}
   - component: {fileID: 948358708078346097}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PastaPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

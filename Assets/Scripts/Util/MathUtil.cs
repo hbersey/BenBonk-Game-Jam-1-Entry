@@ -6,7 +6,7 @@ namespace Util
     public static class MathUtil
     {
         private static readonly string[] Abbreviations =
-            {"k", "M", "B", "T", "q", "Q", "s", "S", "O", "N", "AA", "BB", "CC", "DD", "EE", "FF", "GG", "HH"};
+            {"k", "M", "B", "T", "q", "Q", "s", "S", "O", "N", "AA", "BB", "CC", "DD", "EE", "FF", "GG", "HH", "XX", "YY", "ZZ"};
 
         public static float Wrap(float x, float min, float max)
         {
@@ -36,10 +36,13 @@ namespace Util
                         return $"{num / Mathf.Pow(10f, 3 * (i + 1)):F1}{Abbreviations[i]}";
 
                     if (num < Mathf.Pow(10, 3 * (i + 1) + 3))
-                        return $"{num / Mathf.Pow(10, 3 * (i + 1)):D}{Abbreviations[i]}";
+                    {
+                    }
+
+                    return $"{num / ((int) Mathf.Pow(10, 3 * (i + 1))):D}{Abbreviations[i]}".Replace(".0", "");
                 }
 
-            return "XX";
+            return "BIG";
         }
     }
 }

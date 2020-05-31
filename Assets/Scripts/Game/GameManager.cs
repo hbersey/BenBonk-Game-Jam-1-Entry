@@ -32,7 +32,7 @@ namespace Game
         internal Vector2 StartPoint;
         internal List<Vector2> ItemSpawnPoints;
         internal List<GameObject> SpawnedItems;
-
+        internal List<Vector2> NpcWaypoints;
 
         private int _currentMapExtent = 1;
         private GameObject[,] _map = new GameObject[1, 1];
@@ -42,6 +42,7 @@ namespace Game
         {
             ItemSpawnPoints = new List<Vector2>();
             SpawnedItems = new List<GameObject>();
+            NpcWaypoints = new List<Vector2>();
             _scorer = new ScoreAndHighScoreManager(prefix: "GAME", doAutoSave: true, doTryLoad: true);
             AddScore(0f); // Renders Text
             SetState(NextRound(true));
@@ -120,6 +121,7 @@ namespace Game
                             ItemSpawnPoints.Add(new Vector2((pointPosition = point.position).x,
                                 pointPosition.y));
                         });
+                        fragment.npcWaypoints.ForEach(npcWaypoint => NpcWaypoints.Add(npcWaypoint.transform.position));
 
                         _map[mapX, mapY] = fragmentInstance;
                         failed = false;
