@@ -31,6 +31,9 @@ namespace Game
         [SerializeField] private Text highScoreText;
         [SerializeField] internal Text dayWeekText;
         [SerializeField] internal Image toFindImage;
+        [SerializeField] internal GameObject health1;
+        [SerializeField] internal GameObject health2;
+        [SerializeField] internal GameObject health3;
 
         [SerializeField] private GameObject inGameGui;
         [SerializeField] private GameObject endOfDayGui;
@@ -46,6 +49,7 @@ namespace Game
         internal List<Vector2> ItemSpawnPoints;
         internal List<GameObject> SpawnedItems;
         internal List<Vector2> NpcWaypoints;
+        internal int Health;
 
         private int _currentMapExtent = 1;
         private GameObject[,] _map = new GameObject[1, 1];
@@ -64,6 +68,7 @@ namespace Game
             inGameGui.SetActive(true);
             endOfDayGui.SetActive(false);
             endOfWeekGui.SetActive(false);
+            SetHealth(3);
             SetState(NextRound(true));
         }
 
@@ -91,12 +96,9 @@ namespace Game
             for (var i = 0; i < Mathf.Min(RoundNumber / 4, NpcWaypoints.Count); i++)
             {
                 GameObject o;
-                if (_spawnedNpcs.Count >= i)
-                {
-                    o = Instantiate(npcPrefabs[Random.Range(0, npcPrefabs.Length)]);
-                }
-                else
-                    o = _spawnedNpcs[i];
+                o = _spawnedNpcs.Count >= i
+                    ? Instantiate(npcPrefabs[Random.Range(0, npcPrefabs.Length)])
+                    : _spawnedNpcs[i];
 
                 var npc = o.GetComponent<NpcController>();
                 npc.Game = this;
@@ -234,5 +236,25 @@ namespace Game
             endOfWeekGui.SetActive(false);
             SetState(NextRound());
         }
+
+        private void GameOver()
+        {
+        }
+
+        private void SetHealth(int health)
+        {
+            if (health <= 0)
+                GameOver();
+
+            health1.SetActive(health >= 1);
+            health2.SetActive(health >= 2);
+            health3.SetActive(health >= 3);
+
+            Health = health;
+        }
+
+        public void PickupHealth() => SetHealth(Health + 1);
+
+        public void LooseHealth() => SetHealth(Health - 1);
     }
 }
