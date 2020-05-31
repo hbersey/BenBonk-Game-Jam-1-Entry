@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using Item;
 using Map;
+using NPC;
 using Player;
 using StateMachine;
 using UnityEngine;
@@ -22,29 +24,38 @@ namespace Game
 
         [SerializeField] internal GameObject[] mapFragmentPrefabs;
         [SerializeField] internal ItemScriptableObject[] allItems;
+        [SerializeField] internal GameObject[] NpcPrefabs;
 
         [SerializeField] private Text scoreText;
         [SerializeField] private Text highScoreText;
         [SerializeField] internal Text dayWeekText;
         [SerializeField] internal Image toFindImage;
 
+        [SerializeField] private GameObject InGameGUI;
+        [SerializeField] private GameObject EndOfDayGUI;
+
         internal int RoundNumber;
         internal Vector2 StartPoint;
         internal List<Vector2> ItemSpawnPoints;
         internal List<GameObject> SpawnedItems;
         internal List<Vector2> NpcWaypoints;
+        internal List<GameObject> SpawnedNPCs;
 
         private int _currentMapExtent = 1;
         private GameObject[,] _map = new GameObject[1, 1];
         private ScoreAndHighScoreManager _scorer;
+        private List<int> usedNpcSpawns;
 
         private void Start()
         {
             ItemSpawnPoints = new List<Vector2>();
             SpawnedItems = new List<GameObject>();
             NpcWaypoints = new List<Vector2>();
+            SpawnedNPCs = new List<GameObject>();
             _scorer = new ScoreAndHighScoreManager(prefix: "GAME", doAutoSave: true, doTryLoad: true);
             AddScore(0f); // Renders Text
+            InGameGUI.SetActive(true);
+            EndOfDayGUI.SetActive(false);
             SetState(NextRound(true));
         }
 
@@ -52,7 +63,10 @@ namespace Game
         {
             foreach (var item in SpawnedItems)
                 Destroy(item);
+            foreach (var npc in SpawnedNPCs) Destroy(npc);
+
             SpawnedItems = new List<GameObject>();
+            SpawnedNPCs = new List<GameObject>();
 
             RoundNumber++;
 
@@ -63,6 +77,37 @@ namespace Game
                 i < Mathf.Min(baseItemsPerRound + (int) (Mathf.Pow(1.125f, RoundNumber) - 1), ItemSpawnPoints.Count);
                 i++)
                 items.Add(allItems[Random.Range(0, allItems.Length)]);
+
+
+            usedNpcSpawns = new List<int>();
+            for (var i = 0; i < Mathf.Min(RoundNumber / 4, NpcWaypoints.Count); i++)
+            {
+                GameObject o;
+                if (SpawnedNPCs.Count >= i)
+                {
+                    o = Instantiate(NpcPrefabs[Random.Range(0, NpcPrefabs.Length)]);
+                }
+                else
+                    o = SpawnedNPCs[i];
+
+                var npc = o.GetComponent<NpcController>();
+                npc.Game = this;
+
+                int waypointIndex;
+                while (true)
+                {
+                    waypointIndex = Random.Range(0, NpcWaypoints.Count);
+                    if (!usedNpcSpawns.Contains(waypointIndex))
+                        break;
+                }
+
+                o.transform.position = NpcWaypoints[waypointIndex];
+                npc.SetState(new NpcDestinationReachedState(npc, NpcWaypoints[waypointIndex]));
+
+                SpawnedNPCs.Add(o);
+                usedNpcSpawns.Add(waypointIndex);
+            }
+
             // ReSharper disable once Unity.IncorrectMonoBehaviourInstantiation
             return new RoundState(this, items);
         }
@@ -153,6 +198,19 @@ namespace Game
             _scorer.IncrementScore(amount);
             scoreText.text = MathUtil.Abbreviate((int) _scorer.Score);
             highScoreText.text = $"Best: {MathUtil.Abbreviate((int) _scorer.HighScore)}";
+        }
+
+        public void EndOfDay()
+        {
+            InGameGUI.SetActive(false);
+            EndOfDayGUI.SetActive(true);
+        }
+
+        public void Continue()
+        {
+            InGameGUI.SetActive(true);
+            EndOfDayGUI.SetActive(false);
+            SetState(NextRound());
         }
     }
 }

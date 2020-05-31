@@ -16,20 +16,20 @@ namespace NPC
         {
             if (_previousDestination == null)
             {
-                _previousDestination = Npc.game.NpcWaypoints[0];
+                _previousDestination = Npc.Game.NpcWaypoints[0];
                 var min = Mathf.Infinity;
-                for (var i = 1; i < Npc.game.NpcWaypoints.Count; i++)
+                for (var i = 1; i < Npc.Game.NpcWaypoints.Count; i++)
                 {
-                    var distance = Vector2.Distance(Npc.game.NpcWaypoints[i], Npc.transform.position);
+                    var distance = Vector2.Distance(Npc.Game.NpcWaypoints[i], Npc.transform.position);
                     if (distance >= min) continue;
-                    _previousDestination = Npc.game.NpcWaypoints[i];
+                    _previousDestination = Npc.Game.NpcWaypoints[i];
                     min = distance;
                 }
             }
             Npc.transform.position = (Vector3) _previousDestination;
 
             Debug.Assert(_previousDestination != null, nameof(_previousDestination) + " != null");
-            var possibleWaypoints = Npc.game.NpcWaypoints.FindAll(waypoint => waypoint != _previousDestination &&
+            var possibleWaypoints = Npc.Game.NpcWaypoints.FindAll(waypoint => waypoint != _previousDestination &&
                                                                               (waypoint.x.Equals(
                                                                                    _previousDestination?.x) ||
                                                                                waypoint.y.Equals(
