@@ -26,6 +26,7 @@ namespace NPC
                     min = distance;
                 }
             }
+
             Npc.transform.position = (Vector3) _previousDestination;
 
             Debug.Assert(_previousDestination != null, nameof(_previousDestination) + " != null");
@@ -33,7 +34,10 @@ namespace NPC
                                                                               (waypoint.x.Equals(
                                                                                    _previousDestination?.x) ||
                                                                                waypoint.y.Equals(
-                                                                                   _previousDestination?.y)));
+                                                                                   _previousDestination?.y)) &&
+                                                                              Physics2D.Linecast(
+                                                                                  (Vector2) _previousDestination,
+                                                                                  waypoint).collider == null);
 
             var destination = possibleWaypoints[Random.Range(0, possibleWaypoints.Count - 1)];
             Npc.SetState(new NpcMoveState(Npc, destination));

@@ -7,17 +7,17 @@ namespace Item
     [RequireComponent(typeof(CapsuleCollider2D))]
     public class SanitizerController : MonoBehaviour
     {
-        [SerializeField] private GameManager game;
+        internal GameManager Game;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!other.tag.Equals("Player")) return;
-            if (!(game.State is RoundState state)) return;
-            if (!(game.player.State is PlayerMoveState)) return;
+            if (!(Game.State is RoundState state)) return;
+            if (!(Game.player.State is PlayerMoveState)) return;
 
-            if (game.Health >= 3)
-                game.AddScore(state.PointsPerItem * 5);
-            else game.PickupHealth();
+            if (Game.Health >= 3)
+                Game.AddScore(state.PointsPerItem * 5);
+            else Game.PickupHealth();
 
             Destroy(gameObject);
         }

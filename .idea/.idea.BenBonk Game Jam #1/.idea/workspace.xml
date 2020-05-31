@@ -26,9 +26,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d0db76-4888-492f-a1ed-f7944ed91ec5" name="Default Changelist" comment="Corrected Scoring Namespace">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreAndHighScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreAndHighScoreManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreOnlyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreOnlyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/CookiePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/CookiePrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/MilkPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/MilkPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/PastaPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/PastaPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/ToiletPaperPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/ToiletPaperPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/WatermelonSandwichPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/WatermelonSandwichPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Map/Fragments/Map Fragment 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map/Fragments/Map Fragment 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Map/Fragments/Map Fragment.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map/Fragments/Map Fragment.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NPCs/NPC Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NPCs/NPC Man.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NPCs/NPC Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NPCs/NPC Woman.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/RoundState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/RoundState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/SanitizerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/SanitizerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NpcController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NpcController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NpcDestinationReachedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NpcDestinationReachedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamagedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamagedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,22 +59,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreOnlyManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/ChaseState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolAndDetectState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalPatrolState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalMoveState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/IdleState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/BaseState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/PlatformerMovingNPC.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolAndChaseNpc.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/EndGameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamagedState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPC/NpcMoveState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPC/NpcDestinationReachedState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPC/NpcController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreAndHighScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/HorizontalPatrolNpc.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerMoveState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/SanitizerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/MapFragmentController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/MathUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/RoundState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -63,7 +80,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/2DPlatformerMovingEntityController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlatformerMovingEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/States/Idle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/States/PlatformerMovingEntityState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/States/PatrolState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/States/MoveState.cs" />
@@ -86,7 +102,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerHorizontalMoveState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/Player/PlayerMoveState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingNPCs/States/HorizontalMoveState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scoring/IScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scoring/IntegerScoreOnlyManager.cs" />
@@ -96,6 +111,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Scoring/ScoreOnlyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreOnlyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreAndHighScoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NPC/NpcController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamagedState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/SanitizerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/RoundState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NPC/NpcDestinationReachedState.cs" />
       </list>
     </option>
   </component>
@@ -148,6 +172,8 @@
       <workItem from="1590676162862" duration="831000" />
       <workItem from="1590678560333" duration="53000" />
       <workItem from="1590678784975" duration="4307000" />
+      <workItem from="1590950474202" duration="905000" />
+      <workItem from="1590951593146" duration="2385000" />
     </task>
     <task id="LOCAL-00001" summary="Corrected Scoring Namespace">
       <created>1590681686548</created>
@@ -264,11 +290,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589409670374" />
-    <state x="794" y="238" key="RiderGenerateDialog" timestamp="1590676692442">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="2615" y="257" key="RiderGenerateDialog" timestamp="1590953035285">
+      <screen x="1920" y="26" width="1680" height="1020" />
     </state>
     <state x="794" y="236" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589408457068" />
     <state x="794" y="238" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1590676692442" />
+    <state x="2615" y="257" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590953035285" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1589444362602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -285,10 +312,10 @@
       <screen x="1920" y="26" width="1680" height="1020" />
     </state>
     <state x="2012" y="118" width="1496" height="836" key="dock-window-1/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590679429961" />
-    <state x="2465" y="247" width="672" height="665" key="search.everywhere.popup" timestamp="1590684681330">
+    <state x="2465" y="247" width="672" height="665" key="search.everywhere.popup" timestamp="1590953017140">
       <screen x="1920" y="26" width="1680" height="1020" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589444232259" />
-    <state x="2465" y="247" width="672" height="665" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590684681330" />
+    <state x="2465" y="247" width="672" height="665" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590953017140" />
   </component>
 </project>

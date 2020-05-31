@@ -17,9 +17,5 @@ namespace StateMachine
         public virtual void PhysicsUpdate()
         {
         }
-
-        public virtual void End()
-        {
-        }
     }
 }

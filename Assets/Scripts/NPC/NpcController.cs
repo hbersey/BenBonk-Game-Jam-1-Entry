@@ -1,5 +1,6 @@
 ﻿using System;
 using Game;
+using Player;
 using StateMachine;
 using UnityEngine;
 using Util;
@@ -27,8 +28,10 @@ namespace NPC
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (!other.collider.tag.Equals("Player")) return;
-if(!(Game.player.State is ))
-            
+            if (!(Game.player.State is PlayerMoveState)) return;
+
+            Game.player.SetState(new PlayerDamagedState(Game.player));
+            Game.LooseHealth();
             
         }
     }

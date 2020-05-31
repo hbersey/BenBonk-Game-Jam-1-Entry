@@ -34,7 +34,15 @@ namespace Game
                 unusedSpawnLocations.RemoveAt(locationIndex);
                 Game.SpawnedItems.Add(o);
             }
-
+            
+            if (Game.NextHealthSpawnRound <= Game.RoundNumber && unusedSpawnLocations.Count > 0)
+            {
+                var locationI = Random.Range(0, unusedSpawnLocations.Count - 1);
+                Instantiate(Game.sanitizerPrefab, unusedSpawnLocations[locationI], Quaternion.Euler(Vector3.zero)).GetComponent<SanitizerController>().Game = Game;
+                unusedSpawnLocations.RemoveAt(locationI);
+                Game.NextHealthSpawnRound = Game.RoundNumber + Random.Range(5, 10);
+            }
+            
             foreach (var location in unusedSpawnLocations)
             {
                 var item = Game.allItems[Random.Range(0, Game.allItems.Length)];

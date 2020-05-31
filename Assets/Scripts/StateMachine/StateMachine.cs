@@ -18,7 +18,6 @@ namespace StateMachine
 
         protected internal void SetState(T state)
         {
-            if (State != null) State.End();
             State = state;
             State.Begin();
         }

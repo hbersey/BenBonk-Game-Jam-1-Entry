@@ -26,7 +26,8 @@ namespace Game
         [SerializeField] internal GameObject[] mapFragmentPrefabs;
         [SerializeField] internal ItemScriptableObject[] allItems;
         [SerializeField] internal GameObject[] npcPrefabs;
-
+        [SerializeField] internal GameObject sanitizerPrefab;
+        
         [SerializeField] private Text scoreText;
         [SerializeField] private Text highScoreText;
         [SerializeField] internal Text dayWeekText;
@@ -50,6 +51,7 @@ namespace Game
         internal List<GameObject> SpawnedItems;
         internal List<Vector2> NpcWaypoints;
         internal int Health;
+        internal int NextHealthSpawnRound;
 
         private int _currentMapExtent = 1;
         private GameObject[,] _map = new GameObject[1, 1];
@@ -68,6 +70,7 @@ namespace Game
             inGameGui.SetActive(true);
             endOfDayGui.SetActive(false);
             endOfWeekGui.SetActive(false);
+            NextHealthSpawnRound = Random.Range(5, 10);
             SetHealth(3);
             SetState(NextRound(true));
         }
@@ -99,7 +102,7 @@ namespace Game
                 o = _spawnedNpcs.Count >= i
                     ? Instantiate(npcPrefabs[Random.Range(0, npcPrefabs.Length)])
                     : _spawnedNpcs[i];
-
+                o.SetActive(true);
                 var npc = o.GetComponent<NpcController>();
                 npc.Game = this;
 
@@ -212,6 +215,9 @@ namespace Game
 
         public void EndOfDay()
         {
+            foreach (var npc in _spawnedNpcs)
+                npc.SetActive(false);
+            
             inGameGui.SetActive(false);
 
             if (RoundNumber % 7 == 0)
