@@ -26,28 +26,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d0db76-4888-492f-a1ed-f7944ed91ec5" name="Default Changelist" comment="Corrected Scoring Namespace">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Menu.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/CookiePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/CookiePrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/MilkPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/MilkPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/PastaPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/PastaPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/ToiletPaperPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/ToiletPaperPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/WatermelonSandwichPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/WatermelonSandwichPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Fragments/Map Fragment 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map/Fragments/Map Fragment 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Fragments/Map Fragment.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map/Fragments/Map Fragment.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NPCs/NPC Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NPCs/NPC Man.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NPCs/NPC Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NPCs/NPC Woman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/RoundState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/RoundState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/SanitizerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/SanitizerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NpcController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NpcController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Menu/Menu Slide2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Menu/Menu Slide2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Menu/title3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Menu/title3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NpcDestinationReachedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NpcDestinationReachedState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamagedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamagedState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/Scoring/ScoreOnlyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/EndGameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamagedState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPC/NpcMoveState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPC/NpcDestinationReachedState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -120,6 +110,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/SanitizerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/RoundState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NPC/NpcDestinationReachedState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuController.cs" />
       </list>
     </option>
   </component>
@@ -173,7 +165,7 @@
       <workItem from="1590678560333" duration="53000" />
       <workItem from="1590678784975" duration="4307000" />
       <workItem from="1590950474202" duration="905000" />
-      <workItem from="1590951593146" duration="2385000" />
+      <workItem from="1590951593146" duration="4658000" />
     </task>
     <task id="LOCAL-00001" summary="Corrected Scoring Namespace">
       <created>1590681686548</created>

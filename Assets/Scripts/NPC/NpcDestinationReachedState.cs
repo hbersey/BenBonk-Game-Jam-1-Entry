@@ -34,10 +34,8 @@ namespace NPC
                                                                               (waypoint.x.Equals(
                                                                                    _previousDestination?.x) ||
                                                                                waypoint.y.Equals(
-                                                                                   _previousDestination?.y)) &&
-                                                                              Physics2D.Linecast(
-                                                                                  (Vector2) _previousDestination,
-                                                                                  waypoint).collider == null);
+                                                                                   _previousDestination?.y))
+                                                                             );
 
             var destination = possibleWaypoints[Random.Range(0, possibleWaypoints.Count - 1)];
             Npc.SetState(new NpcMoveState(Npc, destination));

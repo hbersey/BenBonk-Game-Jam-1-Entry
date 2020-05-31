@@ -34,6 +34,9 @@
           <e p="Map" t="Include">
             <e p="MapFragmentController.cs" t="Include" />
           </e>
+          <e p="Menu" t="Include">
+            <e p="MainMenuController.cs" t="Include" />
+          </e>
           <e p="NPC" t="Include">
             <e p="Friction.cs" t="Include" />
             <e p="NpcController.cs" t="Include" />
