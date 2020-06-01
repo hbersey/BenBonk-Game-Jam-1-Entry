@@ -14,6 +14,7 @@ using Util.Scoring;
 
 namespace Game
 {
+    [RequireComponent(typeof(AudioSource))]
     public class GameManager : StateMachine<GameState>
     {
         private const float MapFragmentSize = 8f;
@@ -27,7 +28,7 @@ namespace Game
         [SerializeField] internal ItemScriptableObject[] allItems;
         [SerializeField] internal GameObject[] npcPrefabs;
         [SerializeField] internal GameObject sanitizerPrefab;
-        
+
         [SerializeField] private Text scoreText;
         [SerializeField] private Text highScoreText;
         [SerializeField] internal Text dayWeekText;
@@ -39,6 +40,8 @@ namespace Game
         [SerializeField] private GameObject inGameGui;
         [SerializeField] private GameObject endOfDayGui;
         [SerializeField] private GameObject endOfWeekGui;
+
+        [SerializeField] private AudioClip endOfDayClip;
 
         [FormerlySerializedAs("endOfDayGuiDayWeekText")] [SerializeField]
         private Text endOfDayTitle;
@@ -53,6 +56,8 @@ namespace Game
         internal int Health;
         internal int NextHealthSpawnRound;
 
+        private AudioSource _audioSource;
+
         private int _currentMapExtent = 1;
         private GameObject[,] _map = new GameObject[1, 1];
         private ScoreAndHighScoreManager _scorer;
@@ -61,6 +66,7 @@ namespace Game
 
         private void Start()
         {
+            _audioSource = GetComponent<AudioSource>();
             ItemSpawnPoints = new List<Vector2>();
             SpawnedItems = new List<GameObject>();
             NpcWaypoints = new List<Vector2>();
@@ -217,8 +223,11 @@ namespace Game
         {
             foreach (var npc in _spawnedNpcs)
                 npc.SetActive(false);
-            
+
             inGameGui.SetActive(false);
+
+            _audioSource.clip = endOfDayClip;
+            _audioSource.Play();
 
             if (RoundNumber % 7 == 0)
             {
@@ -240,6 +249,7 @@ namespace Game
             inGameGui.SetActive(true);
             endOfDayGui.SetActive(false);
             endOfWeekGui.SetActive(false);
+            _audioSource.Stop();
             SetState(NextRound());
         }
 

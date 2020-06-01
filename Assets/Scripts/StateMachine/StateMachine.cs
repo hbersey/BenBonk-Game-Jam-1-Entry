@@ -6,7 +6,7 @@ namespace StateMachine
     {
         protected internal T State;
 
-        private void Update()
+        private protected void Update()
         {
             State.Update();
         }
