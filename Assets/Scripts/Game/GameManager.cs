@@ -33,6 +33,7 @@ namespace Game
         [SerializeField] private Text scoreText;
         [SerializeField] private Text highScoreText;
         [SerializeField] internal Text dayWeekText;
+        [SerializeField] private Text timerText;
         [SerializeField] internal Image toFindImage;
         [SerializeField] internal GameObject health1;
         [SerializeField] internal GameObject health2;
@@ -44,13 +45,15 @@ namespace Game
         [SerializeField] internal GameObject gameOverGui;
 
         [SerializeField] private AudioClip endOfDayClip;
+        [SerializeField] private AudioClip gameOverClip;
 
         [FormerlySerializedAs("endOfDayGuiDayWeekText")] [SerializeField]
         private Text endOfDayTitle;
+
         [SerializeField] private Text endOfWeekTitle;
-        [SerializeField] internal Text gameOverScoreText; 
+        [SerializeField] internal Text gameOverScoreText;
         [SerializeField] internal Text gameOverHighScoreText;
-        
+
         internal int RoundNumber;
         internal Vector2 StartPoint;
         internal List<Vector2> ItemSpawnPoints;
@@ -66,6 +69,7 @@ namespace Game
         internal ScoreAndHighScoreManager Scorer;
         private List<int> _usedNpcSpawns;
         private List<GameObject> _spawnedNpcs;
+        private float timeLeft;
 
         private void Start()
         {
@@ -83,6 +87,19 @@ namespace Game
             NextHealthSpawnRound = Random.Range(5, 10);
             SetHealth(3);
             SetState(NextRound(true));
+        }
+
+        private void Update()
+        {
+            base.Update();
+            timeLeft -= Time.deltaTime;
+            var minutes = ((int) timeLeft + 1) / 60;
+            var secs = ((int) timeLeft + 1) % 60;
+
+            if (timeLeft <= 0 && State is RoundState)
+                SetState(new GameOverState(this));
+
+            timerText.text = minutes > 0 ? $"{minutes}:{secs:00}" : $"{secs}s";
         }
 
         public RoundState NextRound(bool isFirst = false)
@@ -130,6 +147,9 @@ namespace Game
                 _spawnedNpcs.Add(o);
                 _usedNpcSpawns.Add(waypointIndex);
             }
+
+            // ReSharper disable once Unity.IncorrectMonoBehaviourInstantiation
+            timeLeft = 120f;
 
             // ReSharper disable once Unity.IncorrectMonoBehaviourInstantiation
             return new RoundState(this, items);
@@ -256,7 +276,7 @@ namespace Game
             _audioSource.Stop();
             SetState(NextRound());
         }
-        
+
         private void SetHealth(int health)
         {
             if (health <= 0)
@@ -274,5 +294,11 @@ namespace Game
         public void LooseHealth() => SetHealth(Health - 1);
 
         public void ToMainMenu() => SceneManager.LoadScene("Scenes/Main Menu");
+
+        public void PlayGameOverClip()
+        {
+            _audioSource.clip = gameOverClip;
+            _audioSource.Play();
+        }
     }
 }
