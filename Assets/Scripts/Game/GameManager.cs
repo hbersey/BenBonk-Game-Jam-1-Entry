@@ -149,7 +149,7 @@ namespace Game
             }
 
             // ReSharper disable once Unity.IncorrectMonoBehaviourInstantiation
-            timeLeft = 120f;
+            timeLeft = 60f;
 
             // ReSharper disable once Unity.IncorrectMonoBehaviourInstantiation
             return new RoundState(this, items);

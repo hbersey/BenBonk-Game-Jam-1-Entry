@@ -26,12 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d0db76-4888-492f-a1ed-f7944ed91ec5" name="Default Changelist" comment="Corrected Scoring Namespace">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamagedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamagedState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/EndDayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/EndDayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,13 +106,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Util/Timer/IOnTimerDone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Util/Timer/Timer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameOverState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Util/MathUtil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/SanitizerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMoveState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamagedState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/EndDayState.cs" />
       </list>
     </option>
   </component>
@@ -171,6 +169,7 @@
       <workItem from="1590950474202" duration="905000" />
       <workItem from="1590951593146" duration="8194000" />
       <workItem from="1590996434680" duration="12847000" />
+      <workItem from="1591030003054" duration="957000" />
     </task>
     <task id="LOCAL-00001" summary="Corrected Scoring Namespace">
       <created>1590681686548</created>
@@ -309,10 +308,11 @@
       <screen x="1920" y="26" width="1680" height="1020" />
     </state>
     <state x="2012" y="118" width="1496" height="836" key="dock-window-1/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1590679429961" />
-    <state x="2465" y="247" width="672" height="665" key="search.everywhere.popup" timestamp="1591010810670">
-      <screen x="1920" y="26" width="1680" height="1020" />
+    <state x="623" y="228" width="768" height="685" key="search.everywhere.popup" timestamp="1591030023266">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589444232259" />
+    <state x="623" y="228" width="768" height="685" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1591030023266" />
     <state x="2465" y="247" width="672" height="665" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1591010810670" />
   </component>
 </project>
