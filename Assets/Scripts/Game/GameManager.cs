@@ -237,14 +237,14 @@ namespace Game
             {
                 endOfDayGui.SetActive(false);
                 endOfWeekGui.SetActive(true);
-                endOfWeekTitle.text = $"Week {RoundNumber / 7} Completed!";
+                endOfWeekTitle.text = $"Week {RoundNumber / 7} Done!";
             }
             else
             {
                 endOfDayGui.SetActive(true);
                 endOfWeekGui.SetActive(false);
                 endOfDayTitle.text =
-                    $"{Contants.Days[(RoundNumber - 1) % 7]}, Week {RoundNumber / 7 + 1} Completed!";
+                    $"{Contants.Days[(RoundNumber - 1) % 7]}, Week {RoundNumber / 7 + 1}!";
             }
         }
 

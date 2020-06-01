@@ -27,8 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="18d0db76-4888-492f-a1ed-f7944ed91ec5" name="Default Changelist" comment="Corrected Scoring Namespace">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Menu/BackTrack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Menu/BackTrack.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Menu/background of day end.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Menu/background of day end.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Menu/background of day end.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Menu/background of day end.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,9 +107,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NPC/NpcController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/RoundState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameOverState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -162,7 +164,7 @@
       <workItem from="1590678784975" duration="4307000" />
       <workItem from="1590950474202" duration="905000" />
       <workItem from="1590951593146" duration="8194000" />
-      <workItem from="1590996434680" duration="2705000" />
+      <workItem from="1590996434680" duration="3835000" />
     </task>
     <task id="LOCAL-00001" summary="Corrected Scoring Namespace">
       <created>1590681686548</created>
