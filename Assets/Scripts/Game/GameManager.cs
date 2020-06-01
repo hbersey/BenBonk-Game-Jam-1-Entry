@@ -7,6 +7,7 @@ using NPC;
 using Player;
 using StateMachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Util;
@@ -37,17 +38,19 @@ namespace Game
         [SerializeField] internal GameObject health2;
         [SerializeField] internal GameObject health3;
 
-        [SerializeField] private GameObject inGameGui;
+        [SerializeField] internal GameObject inGameGui;
         [SerializeField] private GameObject endOfDayGui;
         [SerializeField] private GameObject endOfWeekGui;
+        [SerializeField] internal GameObject gameOverGui;
 
         [SerializeField] private AudioClip endOfDayClip;
 
         [FormerlySerializedAs("endOfDayGuiDayWeekText")] [SerializeField]
         private Text endOfDayTitle;
-
         [SerializeField] private Text endOfWeekTitle;
-
+        [SerializeField] internal Text gameOverScoreText; 
+        [SerializeField] internal Text gameOverHighScoreText;
+        
         internal int RoundNumber;
         internal Vector2 StartPoint;
         internal List<Vector2> ItemSpawnPoints;
@@ -60,7 +63,7 @@ namespace Game
 
         private int _currentMapExtent = 1;
         private GameObject[,] _map = new GameObject[1, 1];
-        private ScoreAndHighScoreManager _scorer;
+        internal ScoreAndHighScoreManager Scorer;
         private List<int> _usedNpcSpawns;
         private List<GameObject> _spawnedNpcs;
 
@@ -71,11 +74,12 @@ namespace Game
             SpawnedItems = new List<GameObject>();
             NpcWaypoints = new List<Vector2>();
             _spawnedNpcs = new List<GameObject>();
-            _scorer = new ScoreAndHighScoreManager(prefix: "GAME", doAutoSave: true, doTryLoad: true);
+            Scorer = new ScoreAndHighScoreManager(prefix: "GAME", doAutoSave: true, doTryLoad: true);
             AddScore(0f); // Renders Text
             inGameGui.SetActive(true);
             endOfDayGui.SetActive(false);
             endOfWeekGui.SetActive(false);
+            gameOverGui.SetActive(false);
             NextHealthSpawnRound = Random.Range(5, 10);
             SetHealth(3);
             SetState(NextRound(true));
@@ -214,9 +218,9 @@ namespace Game
 
         public void AddScore(float amount)
         {
-            _scorer.IncrementScore(amount);
-            scoreText.text = MathUtil.Abbreviate((int) _scorer.Score);
-            highScoreText.text = $"Best: {MathUtil.Abbreviate((int) _scorer.HighScore)}";
+            Scorer.IncrementScore(amount);
+            scoreText.text = MathUtil.Abbreviate((int) Scorer.Score);
+            highScoreText.text = $"Best: {MathUtil.Abbreviate((int) Scorer.HighScore)}";
         }
 
         public void EndOfDay()
@@ -252,15 +256,11 @@ namespace Game
             _audioSource.Stop();
             SetState(NextRound());
         }
-
-        private void GameOver()
-        {
-        }
-
+        
         private void SetHealth(int health)
         {
             if (health <= 0)
-                GameOver();
+                SetState(new GameOverState(this));
 
             health1.SetActive(health >= 1);
             health2.SetActive(health >= 2);
@@ -272,5 +272,7 @@ namespace Game
         public void PickupHealth() => SetHealth(Health + 1);
 
         public void LooseHealth() => SetHealth(Health - 1);
+
+        public void ToMainMenu() => SceneManager.LoadScene("Scenes/Main Menu");
     }
 }

@@ -81,7 +81,7 @@ namespace Game
         {
             _remainingItems.RemoveAt(0);
             if (_remainingItems.Count == 0)
-                Game.SetState(new EndGameState(Game));
+                Game.SetState(new EndDayState(Game));
             else
                 Render();
         }

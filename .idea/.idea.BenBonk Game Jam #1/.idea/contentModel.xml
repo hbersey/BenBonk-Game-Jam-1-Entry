@@ -21,8 +21,9 @@
         <e p="Scripts" t="Include">
           <e p="Game" t="Include">
             <e p="Contants.cs" t="Include" />
-            <e p="EndGameState.cs" t="Include" />
+            <e p="EndDayState.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+            <e p="GameOverState.cs" t="Include" />
             <e p="GameState.cs" t="Include" />
             <e p="RoundState.cs" t="Include" />
           </e>

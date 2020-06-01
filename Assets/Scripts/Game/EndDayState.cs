@@ -1,8 +1,8 @@
 ﻿namespace Game
 {
-    public class EndGameState: GameState
+    public class EndDayState: GameState
     {
-        public EndGameState(GameManager game) : base(game)
+        public EndDayState(GameManager game) : base(game)
         {
             
         }
