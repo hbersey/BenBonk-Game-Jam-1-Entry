@@ -1768,6 +1768,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 076af3035b6c88947b237434ac2e2768, type: 2}
   - {fileID: 11400000, guid: b33ed19a148db2f4789a95fd65f0fa13, type: 2}
   - {fileID: 11400000, guid: f273bc96839b19544a9f4493cf7d4a05, type: 2}
+  - {fileID: 11400000, guid: 8151d0c698e286c48a7bb3bed63cbd91, type: 2}
   npcPrefabs:
   - {fileID: 6145816218011510395, guid: 3b24c5c3b107c844194f8f0fcd883c65, type: 3}
   - {fileID: 7975733934167537264, guid: 6444d3091c1ffd94492b36491688961d, type: 3}
