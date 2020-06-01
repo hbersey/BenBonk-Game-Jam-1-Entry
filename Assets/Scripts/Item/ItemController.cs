@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using Game;
+using Player;
 using UnityEngine;
 
 namespace Item
@@ -23,7 +24,7 @@ namespace Item
         {
             if (!other.gameObject.tag.Equals("Player")) return;
 
-            if (!(Game.State is RoundState state) || state.CurrentItem() == null) return;
+            if (!(Game.State is RoundState state) || state.CurrentItem() == null || Game.player.State is PlayerDamagedState) return;
             // ReSharper disable once PossibleNullReferenceException
             if (state.CurrentItem() != null && !state.CurrentItem().id.Equals(Id))
                 return;
@@ -35,11 +36,10 @@ namespace Item
         {
             _renderer.enabled = false;
             _audioSource.Play();
-            yield return new WaitForSeconds(_audioSource.clip.length);
             Game.AddScore(state.PointsPerItem);
-            gameObject.SetActive(false);
-
             state.NextItem();
+            yield return new WaitForSeconds(_audioSource.clip.length);
+            gameObject.SetActive(false);
         }
     }
 }

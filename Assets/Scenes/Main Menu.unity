@@ -6069,7 +6069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.000011, y: -83.6}
+  m_AnchoredPosition: {x: 18.73, y: -83.6}
   m_SizeDelta: {x: 370.3949, y: 51.696976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1349435716
@@ -7453,7 +7453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 87.05001}
+  m_AnchoredPosition: {x: 18.73, y: 87.05001}
   m_SizeDelta: {x: 370.3949, y: 51.696976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1636307547
@@ -7732,7 +7732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.000011, y: -25.848}
+  m_AnchoredPosition: {x: 18.73, y: -25.848}
   m_SizeDelta: {x: 370.3949, y: 51.696976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1673660112
@@ -7767,7 +7767,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Atkan Sezer
+  m_Text: Atakan Sezer
 --- !u!222 &1673660113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8089,7 +8089,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.000011, y: 29.95}
+  m_AnchoredPosition: {x: 18.73, y: 29.95}
   m_SizeDelta: {x: 370.3949, y: 51.696976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1730572195
