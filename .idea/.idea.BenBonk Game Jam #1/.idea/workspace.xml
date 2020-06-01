@@ -27,9 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18d0db76-4888-492f-a1ed-f7944ed91ec5" name="Default Changelist" comment="Corrected Scoring Namespace">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BenBonk Game Jam #1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameOverState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameOverState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/MathUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/MathUtil.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +69,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/States/MoveState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/States/BaseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/States/IdleState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Util/MathUtil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/States/XPatrolState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/PlatformerMovingEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Platformer/MovingEntity/HorizontalPatrolEntity.cs" />
@@ -112,6 +109,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Util/Timer/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameOverState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Util/MathUtil.cs" />
       </list>
     </option>
   </component>
@@ -166,7 +164,7 @@
       <workItem from="1590678784975" duration="4307000" />
       <workItem from="1590950474202" duration="905000" />
       <workItem from="1590951593146" duration="8194000" />
-      <workItem from="1590996434680" duration="8700000" />
+      <workItem from="1590996434680" duration="9353000" />
     </task>
     <task id="LOCAL-00001" summary="Corrected Scoring Namespace">
       <created>1590681686548</created>

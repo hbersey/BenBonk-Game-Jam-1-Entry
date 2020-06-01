@@ -1,12 +1,14 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 
 namespace Util
 {
     public static class MathUtil
     {
-        private static readonly string[] Abbreviations =
-            {"k", "M", "B", "T", "q", "Q", "s", "S", "O", "N", "AA", "BB", "CC", "DD", "EE", "FF", "GG", "HH", "XX", "YY", "ZZ"};
+
+        private static readonly string[] units = {"", "k", "m", "b", "t", "q", "Q", "s", "S"};
 
         public static float Wrap(float x, float min, float max)
         {
@@ -24,25 +26,29 @@ namespace Util
         [SuppressMessage("ReSharper", "ConvertIfStatementToReturnStatement")]
         public static string Abbreviate(int num)
         {
-            if (num < 1000)
-                return num.ToString();
+            if (num < 1)
+            {
+                return "0";
+            }
+
+            var n = (int) Mathf.Log(num, 1000);
+            var m = num / Mathf.Pow(1000, n);
+            var unit = "";
+            
+            if (n < units.Length)
+            {
+                unit = units[n];
+            }
             else
-                for (var i = 0; i < Abbreviations.Length - 1; i++)
-                {
-                    // 0 -> k
-                    // 1 -> M
+            {
+                var unitInt = n - units.Length;
+                var secondUnit = unitInt % 26;
+                var firstUnit = unitInt / 26;
+                unit = Convert.ToChar(firstUnit + 'A').ToString() + Convert.ToChar(secondUnit + 'A');
+            }
+            
+            return (Mathf.Floor(m * 100) / 100).ToString("0.##") + unit;
 
-                    if (num < Mathf.Pow(10, 3 * (i + 1) + 1))
-                        return $"{num / Mathf.Pow(10f, 3 * (i + 1)):F1}{Abbreviations[i]}";
-
-                    if (num < Mathf.Pow(10, 3 * (i + 1) + 3))
-                    {
-                    }
-
-                    return $"{num / ((int) Mathf.Pow(10, 3 * (i + 1))):D}{Abbreviations[i]}".Replace(".0", "");
-                }
-
-            return "BIG";
         }
     }
 }
