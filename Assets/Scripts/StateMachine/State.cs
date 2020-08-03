@@ -2,11 +2,11 @@
 {
     public abstract class State<T>
     {
-        private T _machine;
+        private T _controlling;
 
-        protected State(T machine)
+        protected State(T controlling)
         {
-            _machine = machine;
+            _controlling = controlling;
         }
 
         public virtual void OnBegin()
