@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fbM45wjek911ld460Y3cLc31Fm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="" />
+      <created>1596482155857</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596482155857</updated>
+      <workItem from="1596482251362" duration="820000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="741" y="151" key="RollbackChangesDialog" timestamp="1596482638113">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="741" y="151" key="RollbackChangesDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596482638113" />
+    <state x="757" y="177" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1596482606574">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="757" y="177" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596482606574" />
+    <state x="761" y="433" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596483136696">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="761" y="433" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596483136696" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596483140492">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596483140492" />
+  </component>
+</project>
