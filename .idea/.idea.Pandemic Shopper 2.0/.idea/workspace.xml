@@ -10,12 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="More Stuff">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
+    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Refactoring">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +28,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///State.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -36,8 +42,10 @@
         <option value="$PROJECT_DIR$/Assets/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" />
       </list>
     </option>
   </component>
@@ -78,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596482155857</updated>
       <workItem from="1596482251362" duration="820000" />
-      <workItem from="1596483553587" duration="2651000" />
+      <workItem from="1596483553587" duration="3302000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1596483766925</created>
@@ -94,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1596484069640</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="State Machine and State (1.0.2)">
+      <created>1596490745489</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596490745489</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactoring">
+      <created>1596491204005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596491204005</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -114,9 +136,15 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="More Stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="More Stuff" />
+    <MESSAGE value="State Machine and State (1.0.2)" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="788" y="158" key="RiderGenerateDialog" timestamp="1596490934925">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="788" y="158" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596490934925" />
     <state x="741" y="151" key="RollbackChangesDialog" timestamp="1596482638113">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -133,9 +161,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="761" y="433" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596483710890" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596483741998">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596490926872">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596483741998" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596490926872" />
   </component>
 </project>
