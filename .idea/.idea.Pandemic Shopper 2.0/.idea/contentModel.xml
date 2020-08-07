@@ -11,8 +11,10 @@
           <e p="Entity" t="Include">
             <e p="Entity.cs" t="Include" />
             <e p="EntityIdleState.cs" t="Include" />
+            <e p="EntityMoveState.cs" t="Include" />
           </e>
           <e p="StateMachine" t="Include">
+            <e p="IHasStateMachine.cs" t="Include" />
             <e p="State.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
           </e>

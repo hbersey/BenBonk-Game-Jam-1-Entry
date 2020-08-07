@@ -1,12 +1,12 @@
 ﻿namespace StateMachine
 {
-    public abstract class State<T>
+    public abstract class State<T> where T : IHasStateMachine<T>
     {
-        private T _controlling;
+        internal readonly T Controlling;
 
         protected State(T controlling)
         {
-            _controlling = controlling;
+            Controlling = controlling;
         }
 
         public virtual void OnBegin()
@@ -23,6 +23,11 @@
 
         public virtual void OnPhysicsTick()
         {
+        }
+
+        public void SetState(State<T> state)
+        {
+            Controlling.GetStateMachine().SetState(state);
         }
     }
 }

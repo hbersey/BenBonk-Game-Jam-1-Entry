@@ -2,7 +2,7 @@
 
 namespace StateMachine
 {
-    public class StateMachine<T>
+    public class StateMachine<T> where T: IHasStateMachine<T>
     {
         [CanBeNull] private State<T> _state;
 
