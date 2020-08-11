@@ -10,25 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Added Entity.MoveInDirection().... and lots of stuff I can't remeber :(">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InputUtil.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InputUtil.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerIdleState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerIdleState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMoveState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMoveState.cs.meta" afterDir="false" />
+    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Added Player">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InGameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InGameState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityMoveState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityMoveState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +28,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMoveState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputUtil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMoveState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/InGameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -68,6 +59,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -115,7 +108,7 @@
       <workItem from="1596546019512" duration="3035000" />
       <workItem from="1596805343375" duration="1247000" />
       <workItem from="1597133528861" duration="2630000" />
-      <workItem from="1597162690727" duration="360000" />
+      <workItem from="1597162690727" duration="696000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1596483766925</created>
@@ -159,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596805428243</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Player">
+      <created>1597163073999</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597163073999</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -184,7 +184,8 @@
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Added Entity (1.0.3)" />
     <MESSAGE value="Added Entity.MoveInDirection().... and lots of stuff I can't remeber :(" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Entity.MoveInDirection().... and lots of stuff I can't remeber :(" />
+    <MESSAGE value="Added Player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Player" />
   </component>
   <component name="WindowStateProjectService">
     <state x="788" y="158" key="RiderGenerateDialog" timestamp="1597135252057">
@@ -217,10 +218,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="761" y="433" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596483710890" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597134613161">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="2465" y="247" width="672" height="659" key="search.everywhere.popup" timestamp="1597163250360">
+      <screen x="1920" y="26" width="1680" height="1020" />
     </state>
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597134613161" />
-    <state x="2465" y="247" width="672" height="659" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1596805635449" />
+    <state x="2465" y="247" width="672" height="659" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1597163250360" />
   </component>
 </project>
