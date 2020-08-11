@@ -27,7 +27,8 @@
             <e p="StateMachine.cs" t="Include" />
           </e>
           <e p="World" t="Include">
-            <e p="World.md" t="Include" />
+            <e p="DepartmentScriptableObject.cs" t="Include" />
+            <e p="ItemScriptableObject.cs" t="Include" />
           </e>
         </e>
       </e>

@@ -10,12 +10,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Added GameManager">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/World.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/World.md.meta" afterDir="false" />
+    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Plan World generation etc.">
+      <change afterPath="$PROJECT_DIR$/Assets/Art.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Art.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Art.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/World.md.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +32,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity.meta" root0="FORCE_HIGHLIGHTING" />
@@ -41,6 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -62,6 +69,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/World.md" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Art/Art.md" />
       </list>
     </option>
   </component>
@@ -109,7 +120,7 @@
       <workItem from="1596546019512" duration="3035000" />
       <workItem from="1596805343375" duration="1247000" />
       <workItem from="1597133528861" duration="2630000" />
-      <workItem from="1597162690727" duration="2467000" />
+      <workItem from="1597162690727" duration="3855000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1596483766925</created>
@@ -167,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597163471727</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Plan World generation etc.">
+      <created>1597165330016</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597165330016</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -194,7 +212,8 @@
     <MESSAGE value="Added Entity.MoveInDirection().... and lots of stuff I can't remeber :(" />
     <MESSAGE value="Added Player" />
     <MESSAGE value="Added GameManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GameManager" />
+    <MESSAGE value="Plan World generation etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Plan World generation etc." />
   </component>
   <component name="WindowStateProjectService">
     <state x="788" y="158" key="RiderGenerateDialog" timestamp="1597135252057">
