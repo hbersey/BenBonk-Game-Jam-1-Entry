@@ -10,12 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Added Player">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InGameState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InGameState.cs.meta" afterDir="false" />
+    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Added GameManager">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/World.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/World.md.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -32,12 +30,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMoveState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/InGameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,6 +61,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/World.md" />
       </list>
     </option>
   </component>
@@ -108,7 +109,7 @@
       <workItem from="1596546019512" duration="3035000" />
       <workItem from="1596805343375" duration="1247000" />
       <workItem from="1597133528861" duration="2630000" />
-      <workItem from="1597162690727" duration="696000" />
+      <workItem from="1597162690727" duration="2467000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1596483766925</created>
@@ -159,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597163073999</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added GameManager">
+      <created>1597163471727</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597163471727</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -185,7 +193,8 @@
     <MESSAGE value="Added Entity (1.0.3)" />
     <MESSAGE value="Added Entity.MoveInDirection().... and lots of stuff I can't remeber :(" />
     <MESSAGE value="Added Player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Player" />
+    <MESSAGE value="Added GameManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GameManager" />
   </component>
   <component name="WindowStateProjectService">
     <state x="788" y="158" key="RiderGenerateDialog" timestamp="1597135252057">
@@ -205,11 +214,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="702" y="344" key="SimpleOpenTaskDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597134632191" />
-    <state x="2403" y="277" key="Vcs.Push.Dialog.v2" timestamp="1596491365943">
-      <screen x="1920" y="26" width="1680" height="1020" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1597163851426">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596484074681" />
-    <state x="2403" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1596491365943" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597163851426" />
+    <state x="2403" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1597163487483" />
     <state x="757" y="177" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1596482606574">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
