@@ -10,17 +10,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Added Entity (1.0.3)">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs.meta" afterDir="false" />
+    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Added Entity.MoveInDirection().... and lots of stuff I can't remeber :(">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InputUtil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InputUtil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerIdleState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerIdleState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMoveState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMoveState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityMoveState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/EntityMoveState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,16 +39,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMoveState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/EntityMoveState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -49,17 +59,22 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entity/EntityIdleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entity/EntityMoveState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputUtil.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1fbM45wjek911ld460Y3cLc31Fm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,6 +84,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="tasks.servers" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -97,6 +113,9 @@
       <workItem from="1596482251362" duration="820000" />
       <workItem from="1596483553587" duration="3575000" />
       <workItem from="1596546019512" duration="3035000" />
+      <workItem from="1596805343375" duration="1247000" />
+      <workItem from="1597133528861" duration="2630000" />
+      <workItem from="1597162690727" duration="360000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1596483766925</created>
@@ -133,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596491358480</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Entity.MoveInDirection().... and lots of stuff I can't remeber :(">
+      <created>1596805428243</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596805428243</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -157,18 +183,27 @@
     <MESSAGE value="State Machine and State (1.0.2)" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Added Entity (1.0.3)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Entity (1.0.3)" />
+    <MESSAGE value="Added Entity.MoveInDirection().... and lots of stuff I can't remeber :(" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Entity.MoveInDirection().... and lots of stuff I can't remeber :(" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2610" y="179" key="RiderGenerateDialog" timestamp="1596551844971">
-      <screen x="1920" y="26" width="1680" height="1020" />
+    <state x="788" y="158" key="RiderGenerateDialog" timestamp="1597135252057">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="788" y="158" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596490934925" />
-    <state x="2610" y="179" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1596551844971" />
+    <state x="788" y="158" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597135252057" />
+    <state x="2610" y="179" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1596806419680" />
     <state x="741" y="151" key="RollbackChangesDialog" timestamp="1596482638113">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="741" y="151" key="RollbackChangesDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596482638113" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1597134650643">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597134650643" />
+    <state x="702" y="344" key="SimpleOpenTaskDialog" timestamp="1597134632191">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="702" y="344" key="SimpleOpenTaskDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597134632191" />
     <state x="2403" y="277" key="Vcs.Push.Dialog.v2" timestamp="1596491365943">
       <screen x="1920" y="26" width="1680" height="1020" />
     </state>
@@ -182,10 +217,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="761" y="433" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596483710890" />
-    <state x="2465" y="247" width="672" height="659" key="search.everywhere.popup" timestamp="1596546334843">
-      <screen x="1920" y="26" width="1680" height="1020" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597134613161">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596490926872" />
-    <state x="2465" y="247" width="672" height="659" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1596546334843" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597134613161" />
+    <state x="2465" y="247" width="672" height="659" key="search.everywhere.popup/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1596805635449" />
   </component>
 </project>

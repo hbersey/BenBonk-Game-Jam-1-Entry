@@ -4,19 +4,19 @@ namespace StateMachine
 {
     public class StateMachine<T> where T: IHasStateMachine<T>
     {
-        [CanBeNull] private State<T> _state;
+        [CanBeNull] internal State<T> State;
 
-        public StateMachine(State<T> initialState = null) => _state = initialState;
+        public StateMachine(State<T> initialState = null) => State = initialState;
 
         public void SetState(State<T> state)
         {
-            _state?.OnEnd();
-            _state = state;
-            _state?.OnBegin();
+            State?.OnEnd();
+            State = state;
+            State?.OnBegin();
         }
 
-        public void Tick() => _state?.OnTick();
+        public void Tick() => State?.OnTick();
 
-        public void PhysicsTick() => _state?.OnPhysicsTick();
+        public void PhysicsTick() => State?.OnPhysicsTick();
     }
 }
