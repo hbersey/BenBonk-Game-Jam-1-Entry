@@ -16,6 +16,12 @@
             <e p="InGameState.cs" t="Include" />
           </e>
           <e p="InputUtil.cs" t="Include" />
+          <e p="Item" t="Include">
+            <e p="Item.cs" t="Include" />
+            <e p="ItemCollectedState.cs" t="Include" />
+            <e p="ItemNotCollectedState.cs" t="Include" />
+            <e p="ItemScriptableObject.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="Player.cs" t="Include" />
             <e p="PlayerIdleState.cs" t="Include" />
@@ -28,7 +34,6 @@
           </e>
           <e p="World" t="Include">
             <e p="DepartmentScriptableObject.cs" t="Include" />
-            <e p="ItemScriptableObject.cs" t="Include" />
           </e>
         </e>
       </e>

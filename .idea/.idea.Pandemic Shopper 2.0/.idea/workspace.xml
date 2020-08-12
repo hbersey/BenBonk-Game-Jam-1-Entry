@@ -10,17 +10,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Plan World generation etc.">
-      <change afterPath="$PROJECT_DIR$/Assets/Art.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Art.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/Art.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs.meta" afterDir="false" />
+    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Did some art">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemCollectedState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemCollectedState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemNotCollectedState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemNotCollectedState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/World.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Grocers/Apple.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Grocers/Apple.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemScriptableObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,23 +37,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Items/Grocers/ApplePrefab.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputUtil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Items/Grocers/ApplePrefab.prefab.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMoveState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/InGameState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Art/Items/Grocers/Bannana.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Apple.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Apple.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Art/Items/Grocers/Avocado.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Art/Items/Grocers/Apple.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemCollectedState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Art/Items/Grocers/Brussels_Sprouts.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Items/Grocers/Apple.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemNotCollectedState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Art/Items/Grocers/Orange.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -65,14 +83,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/World.md" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Art/Art.md" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemNotCollectedState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemCollectedState.cs" />
       </list>
     </option>
   </component>
@@ -120,7 +142,8 @@
       <workItem from="1596546019512" duration="3035000" />
       <workItem from="1596805343375" duration="1247000" />
       <workItem from="1597133528861" duration="2630000" />
-      <workItem from="1597162690727" duration="3855000" />
+      <workItem from="1597162690727" duration="5670000" />
+      <workItem from="1597221588454" duration="1223000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1596483766925</created>
@@ -185,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597165330016</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added Item&#10;Added DepartmentScriptableObject">
+      <created>1597179797785</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597179797785</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Did some art">
+      <created>1597221695759</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1597221695760</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -213,13 +250,15 @@
     <MESSAGE value="Added Player" />
     <MESSAGE value="Added GameManager" />
     <MESSAGE value="Plan World generation etc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Plan World generation etc." />
+    <MESSAGE value="Added Item&#10;Added DepartmentScriptableObject" />
+    <MESSAGE value="Did some art" />
+    <option name="LAST_COMMIT_MESSAGE" value="Did some art" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="788" y="158" key="RiderGenerateDialog" timestamp="1597135252057">
+    <state x="788" y="158" key="RiderGenerateDialog" timestamp="1597221990664">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="788" y="158" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597135252057" />
+    <state x="788" y="158" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597221990664" />
     <state x="2610" y="179" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1596806419680" />
     <state x="741" y="151" key="RollbackChangesDialog" timestamp="1596482638113">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -233,10 +272,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="702" y="344" key="SimpleOpenTaskDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597134632191" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1597163851426">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1597179806913">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597163851426" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597179806913" />
     <state x="2403" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1597163487483" />
     <state x="757" y="177" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1596482606574">
       <screen x="0" y="0" width="1920" height="1050" />

@@ -1,9 +1,11 @@
-﻿using JetBrains.Annotations;
+﻿using System;
+using JetBrains.Annotations;
 using StateMachine;
 using UnityEngine;
 
 namespace Player
 {
+    [RequireComponent(typeof(Collider2D))]
     public class Player : Entity.Entity, IHasStateMachine<Player>
     {
         [SerializeField] internal float speed = 20f;
@@ -20,6 +22,17 @@ namespace Player
             _instance = this;
             Rigidbody = GetComponent<Rigidbody2D>();
             _stateMachine.SetState(new PlayerIdleState(this));
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            
+            var item = other.gameObject.GetComponent<Item.Item>();
+            
+            if (item == null || !item.CanCollect())
+                return;
+            
+            item.Collect();
         }
 
         private void Update() => _stateMachine.Tick();

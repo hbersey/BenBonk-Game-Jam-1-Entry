@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fafc8b76de4844569fd632d35e9fb52e, type: 3}
   m_Name: Apple
   m_EditorClassIdentifier: 
-  name: 
-  sprite: {fileID: 0}
+  name: Apple
+  prefab: {fileID: 5703480006074964873, guid: e095b50fad07fde40bf99954bb04c277, type: 3}
