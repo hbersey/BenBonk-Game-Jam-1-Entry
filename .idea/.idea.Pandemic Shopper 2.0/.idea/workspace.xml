@@ -10,22 +10,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Did some art">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemCollectedState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemCollectedState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemNotCollectedState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemNotCollectedState.cs.meta" afterDir="false" />
+    <list default="true" id="320427a6-dfae-4416-a3c3-bd85372813e2" name="Default Changelist" comment="Added Item">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/Segment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/World/Segment.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pandemic Shopper 2.0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Grocers/Apple.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Grocers/Apple.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemScriptableObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemScriptableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemScriptableObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/World.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/World.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Items/Grocers/ApplePrefab.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Items/Grocers/ApplePrefab.prefab.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Apple.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity.meta" root0="FORCE_HIGHLIGHTING" />
@@ -57,6 +52,7 @@
     <setting file="mock:///Apple.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Art/Items/Grocers/Avocado.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Art/Items/Grocers/Apple.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/World/Segment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/ItemCollectedState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Art/Items/Grocers/Brussels_Sprouts.png.meta" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +63,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/IHasStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Art/Items/Grocers/Orange.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///GameManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -84,17 +81,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/World.md" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/ItemScriptableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/World/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Art/Art.md" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemScriptableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemNotCollectedState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemCollectedState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/Chunk.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/World.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/DepartmentScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item/ItemScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/World.md" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/Segment.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/World/Wall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -143,7 +144,7 @@
       <workItem from="1596805343375" duration="1247000" />
       <workItem from="1597133528861" duration="2630000" />
       <workItem from="1597162690727" duration="5670000" />
-      <workItem from="1597221588454" duration="1223000" />
+      <workItem from="1597221588454" duration="13392000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1596483766925</created>
@@ -222,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597221695760</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Item">
+      <created>1597222838907</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1597222838907</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -252,14 +260,15 @@
     <MESSAGE value="Plan World generation etc." />
     <MESSAGE value="Added Item&#10;Added DepartmentScriptableObject" />
     <MESSAGE value="Did some art" />
-    <option name="LAST_COMMIT_MESSAGE" value="Did some art" />
+    <MESSAGE value="Added Item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Item" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="788" y="158" key="RiderGenerateDialog" timestamp="1597221990664">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="2610" y="179" key="RiderGenerateDialog" timestamp="1597233141798">
+      <screen x="1920" y="26" width="1680" height="1020" />
     </state>
     <state x="788" y="158" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597221990664" />
-    <state x="2610" y="179" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1596806419680" />
+    <state x="2610" y="179" key="RiderGenerateDialog/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1597233141798" />
     <state x="741" y="151" key="RollbackChangesDialog" timestamp="1596482638113">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -272,15 +281,23 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="702" y="344" key="SimpleOpenTaskDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597134632191" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1597179806913">
+    <state x="2012" y="118" width="1496" height="836" key="VCS.FileHistoryDialog" timestamp="1597248677016">
+      <screen x="1920" y="26" width="1680" height="1020" />
+    </state>
+    <state x="2012" y="118" width="1496" height="836" key="VCS.FileHistoryDialog/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1597248677016" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1597222843038">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597179806913" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1597222843038" />
     <state x="2403" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1597163487483" />
     <state x="757" y="177" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1596482606574">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="757" y="177" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1050/1920.26.1680.1020@0.0.1920.1050" timestamp="1596482606574" />
+    <state x="757" y="0" width="1179" height="1007" maximized="true" key="dock-window-1" timestamp="1597224117570">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="757" y="0" width="1179" height="1007" maximized="true" key="dock-window-1/0.0.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1597224117570" />
     <state x="761" y="433" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596483710890">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -34,6 +34,7 @@
           </e>
           <e p="World" t="Include">
             <e p="DepartmentScriptableObject.cs" t="Include" />
+            <e p="Segment.cs" t="Include" />
           </e>
         </e>
       </e>

@@ -1,8 +1,8 @@
 ﻿# World
 - **World** - The entire map
 - **Department** - A Group of adjacent chunks of the same variety
-- **Chunk** - 8x8 Area. "One shop"
-- **Layout** - Predefined Layout for a chunk
+- **Segment** - 8x8 Area. "One shop"
+- **Layout** - Predefined Layout for a segment
 - **Grid** - Used for AI navigation and item placement
 ## Departments
 ####Bakers
